@@ -1,2 +1,0 @@
-# react_redux_toolkit
-test_redux_toolkit
