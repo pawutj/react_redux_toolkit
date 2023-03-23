@@ -1,5 +1,5 @@
 import { createSlice, PayloadAction } from "@reduxjs/toolkit";
-
+import { RootState, AppThunk } from "../../app/store";
 export interface IProductDetail {
   id: number;
   name: string;
@@ -35,6 +35,6 @@ export const cartSlice = createSlice({
     },
   },
 });
-
+export const selectCart = (state: RootState) => state.cart;
 export const { addProduct } = cartSlice.actions;
 export default cartSlice.reducer;
